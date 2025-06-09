@@ -1,0 +1,12 @@
+crewai
+langgraph
+openai
+whisper
+transformers
+streamlit
+langchain
+faiss-cpu
+litellm
+# Add these if you're specifically using Llama 2
+torch
+sentencepiece
