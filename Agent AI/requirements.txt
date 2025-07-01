@@ -1,12 +1,28 @@
-crewai
-langgraph
-openai
-whisper
-transformers
-streamlit
-langchain
-faiss-cpu
-litellm
-# Add these if you're specifically using Llama 2
-torch
-sentencepiece
+# Core dependencies
+streamlit>=1.28.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# AI/ML APIs
+groq>=0.4.1
+google-generativeai>=0.3.0
+huggingface_hub>=0.17.0
+
+# LangChain and LangGraph
+langchain>=0.0.350
+langgraph>=0.0.20
+
+# Audio processing (for local Whisper)
+openai-whisper>=20231117
+torch>=2.0.0
+torchaudio>=2.0.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Optional: For better audio support
+soundfile>=0.12.1
+librosa>=0.10.1
+
+# Development tools (optional)
+python-multipart>=0.0.6
