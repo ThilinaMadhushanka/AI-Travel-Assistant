@@ -1,81 +1,75 @@
-# AI Travel Assistant
+# 🌍 AI Travel Assistant
 
-An intelligent travel planning application that uses AI to help users plan their trips, manage budgets, and find the best travel deals.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Features
+An intelligent, multimodal travel assistant that helps you plan, book, and manage your trips with ease. Powered by AI, it offers personalized recommendations, budgeting, itinerary planning, and more—all in one place.
 
-- 🌍 Intelligent trip planning with day-by-day itineraries
-- 💰 Smart budget management and cost optimization
-- 🏨 Automated booking suggestions for flights and hotels
-- 🎯 Multi-agent system using CrewAI
-- 🔄 Sequential workflow processing
-- 🖼️ Support for multimodal inputs (text, images, audio)
+---
 
-## Prerequisites
+## ✨ Features
+- **AI-Powered Trip Planning**: Get personalized itineraries based on your preferences.
+- **Budget Management**: Plan trips within your budget.
+- **Booking Assistance**: Book flights, hotels, and activities seamlessly.
+- **Multimodal Input**: Supports text and image-based queries.
+- **Interactive Maps**: Visualize your journey and destinations.
+- **Memory & Context**: Remembers your preferences and past trips.
 
-- Python 3.8 or higher
-- OpenAI API key
-- Internet connection
+---
 
-## Installation
+## 📁 Folder Structure
+```
+AI-Travel-Assistant/
+  Agent_AI/
+    agents/         # Core AI agents (planner, booking, budgeter)
+    utils/          # Utility modules (maps, memory, image generation, etc.)
+    workflows/      # Workflow and trip graph logic
+    app.py          # Main application entry point
+    requirements.txt# Python dependencies
+```
 
-1. Clone the repository:
+---
+
+## 🚀 Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/AI-Travel-Assistant.git
+   cd AI-Travel-Assistant/Agent_AI
+   ```
+2. **Create a virtual environment (optional but recommended):**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 🏁 Usage
+Run the main application:
 ```bash
-git clone <my-repository-url>
-cd Agent-AI
+python app.py
 ```
 
-2. Create and activate a virtual environment:
-```bash
-python -m venv venv
-.\venv\Scripts\activate
+You can interact with the assistant via the command line or integrate it into your own interface.
+
+---
+
+## 🧳 Example
+```
+> Where should I travel in June for a beach vacation under $2000?
+AI: I recommend Bali, Indonesia! Here's a 7-day itinerary within your budget...
 ```
 
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+---
 
-4. Create a `.env` file in the root directory:
-```properties
-OPENAI_API_KEY=my_api_key_here
-CREWAI_MODEL=llama2
-LOCAL_AI_URL=http://localhost:8000
-```
+## 🤝 Contributing
+Contributions are welcome! Please open issues or pull requests for new features, bug fixes, or suggestions.
 
-## Usage
+---
 
-1. Start the application:
-```bash
-streamlit run app.py
-```
-
-2. Enter your destination and budget in the text input field
-3. Click "Plan Trip" to generate your personalized travel plan
-
-## Project Structure
-
-```
-Agent-AI/
-├── agents/
-│   ├── planner.py
-│   ├── budgeter.py
-│   └── booking.py
-├── utils/
-│   ├── api_wrappers.py
-│   ├── memory.py
-│   └── multimodal_input.py
-├── workflows/
-│   └── trip_graph.py
-├── app.py
-├── requirements.txt
-└── .env
-```
-
-
-## Acknowledgments
-
-- OpenAI for their API
-- CrewAI framework
-- LangGraph for workflow management
-- Streamlit for the web interface
+## 📄 License
+This project is licensed under the MIT License.
